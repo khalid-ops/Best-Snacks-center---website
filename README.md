@@ -1,10 +1,10 @@
 # Best-Snacks-center---website
 This is a snack store website with following features:
 1. Home Page
-2. category or filter items page
+2. category or filter items pages
 3. search queries page
 4. contact form
-5. feedback form with email onfirmation
+5. feedback form with email confirmation
 6. login page 
 7. user addition page with registeration permission to admin.
 8. default admin or superuser page.

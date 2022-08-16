@@ -18,14 +18,14 @@ files under project are:
 4. wsgi.py
 5. manage.py
 6. dbsqlite3
-7. templates folder
+7. templates folder ->
           all html files under this.
-8. static folder
-        images folder
+8. static folder ->
+        images folder ->
               snacks.jpeg
               juice.jpeg
               icecream.jpeg
-9. dbimages folder
+9. dbimages folder->
           other remaining images
           
 App name - webapp

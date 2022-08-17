@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block title%}Feedback{%endblock title%}
+
+{%block body%}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container mb-3 px-0">
+      <img src="https://source.unsplash.com/1000x200/?smartphones" class="d-block w-100" alt="...">
+  </div>
+  <div class="container mb-3">
+      <h1 class="text-center">Feedback form</h1>
+      <form method="post" action="/feedback">
+      {% csrf_token %}
+      <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input class="form-control" type="text" id="name" name="name" placeholder="Enter your Full Name">
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email address">
+        </div>
+      
+        <div class="form-group">
+          <label for="feedb" class="form-label">Suggestions/Feedback</label>
+          <textarea class="form-control" id="feedb" name="feedb" rows="3" placeholder="Describe your query please."></textarea>
+        </div>
+          
+        <button class="btn btn-dark my-2" type="submit" style="margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">Submit</button>
+      </form>
+
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>   
+
+{%endblock body%}
